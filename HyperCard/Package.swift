@@ -8,6 +8,10 @@ let package = Package(
         .library(name: "HyperCardCore", targets: ["HyperCardCore"])
     ],
     targets: [
-        .target(name: "HyperCardCore")
+        .target(name: "HyperCardCore"),
+        .testTarget(
+            name: "HyperCardCoreTests",
+            dependencies: ["HyperCardCore"]
+        )
     ]
 )

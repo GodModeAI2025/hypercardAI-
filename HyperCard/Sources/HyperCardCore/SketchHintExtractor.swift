@@ -37,7 +37,7 @@ public struct SketchHintExtractor {
 
             if centerY > 0.72, height < 0.16, width > 0.3 {
                 hasBottomButton = true
-            } else if centerY < 0.3, abs(width - height) / size < 0.35, cluster.count >= 12 {
+            } else if centerY < 0.3, abs(width - height) / size < 0.45, cluster.count >= 12 {
                 hasTopImage = true
             } else if centerY >= 0.22, centerY <= 0.75 {
                 rowCount += 1
